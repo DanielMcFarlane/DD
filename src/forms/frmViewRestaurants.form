@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="forms.frmViewRestaurants">
+  <grid id="27dc6" binding="pnlContent" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="5bbf9" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+          <minimumSize width="-1" height="-1"/>
+          <preferredSize width="200" height="0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="94b38">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="4375a" class="javax.swing.JList" binding="lstRestaurants">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="bc624" layout-manager="GridBagLayout">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="d47b4" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="2f005" class="javax.swing.JLabel" binding="lblCuisine">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="18" style="2"/>
+                  <text value="cuisine"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="fa160" class="javax.swing.JLabel" binding="lblName">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <text value="name"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="25edf" class="javax.swing.JLabel" binding="lblImage">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <vspacer id="92c41">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="db725">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="1c32f">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="6da19" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="66abf" class="javax.swing.JButton" binding="btnViewMenu">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <preferredSize width="170" height="40"/>
+                  <text value="View Menu"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <vspacer id="5e064">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="c5c6a">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="53d2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
