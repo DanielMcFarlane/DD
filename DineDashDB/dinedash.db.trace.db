@@ -48,3 +48,28 @@ org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "password" not found [42122-232]
 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2025-02-27 15:41:45.995658Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a\000a-- Insert Menus\000aINSERT INTO menus (restaurant_id, name, description) VALUES\000a(1, 'Pizza Menu', 'A variety of classic and gourmet pizzas'),\000a(2, 'Burger Menu', 'Delicious burgers with fresh ingredients'),\000a(3, 'Italian Menu', 'Traditional Italian dishes'),\000a(4, 'Sushi Menu', 'Authentic Japanese sushi'),\000a(5, 'Indian Menu', 'A variety of classic Indian dishes'),\000a(6, 'Rons Menu', 'Rons Quality Snacks')\000a\000a-- Insert Menu Items (Food)\000a[*]INSERT INTO menu_items (menu_id, name, price, type, description, serving_size, is_alcoholic) VALUES\000a(1, 'Margherita Pizza', 10.99, 'Food', 'Tomato, mozzarella, and basil', 'Large', NULL),\000a(2, 'Cheeseburger', 8.99, 'Food', 'Juicy burger with melted cheese', 'Medium', NULL),\000a(3, 'Margherita Pizza', 7.99, 'Food', 'Tomato, mozzarella, and basil', 'Single Portion', NULL),\000a(3, 'Spaghetti Carbonara', 9.99, 'Food', 'Classic Italian pasta with creamy sauce and pancetta', 'Family Size', NULL),\000a(4, 'Tuna Sashimi', 7.99, 'Food', 'Fresh tuna served raw', 'Family Size', NULL),\000a(4, 'Salmon Nigiri', 6.99, 'Food', 'Fresh salmon on sushi rice', 'Single Portion', NULL),\000a(5, 'Chicken Tikka Masala', 8.99, 'Food', 'Tender chicken in a rich, spiced curry', 'Single Portion', NULL),\000a(5, 'Vegetable Biryani', 11.99, 'Food', 'Flavourful rice with mixed vegetables and spices', 'Family Size', NULL),\000a(6, 'Boston Belly Buster', 4.50, 'Food', 'Sausage, bacon, egg, burger and potato scone all in one roll', 'Single Portion', NULL),\000a(6, 'Tiktok Special', 5.00, 'Food', 'A sub roll filled with griddle fried chicken, seasonings, topped with BBQ pulled pork and crispy onions', 'Single Portion', NULL)"; SQL statement:
+
+
+-- Insert Menus
+INSERT INTO menus (restaurant_id, name, description) VALUES
+(1, 'Pizza Menu', 'A variety of classic and gourmet pizzas'),
+(2, 'Burger Menu', 'Delicious burgers with fresh ingredients'),
+(3, 'Italian Menu', 'Traditional Italian dishes'),
+(4, 'Sushi Menu', 'Authentic Japanese sushi'),
+(5, 'Indian Menu', 'A variety of classic Indian dishes'),
+(6, 'Rons Menu', 'Rons Quality Snacks')
+
+-- Insert Menu Items (Food)
+INSERT INTO menu_items (menu_id, name, price, type, description, serving_size, is_alcoholic) VALUES
+(1, 'Margherita Pizza', 10.99, 'Food', 'Tomato, mozzarella, and basil', 'Large', NULL),
+(2, 'Cheeseburger', 8.99, 'Food', 'Juicy burger with melted cheese', 'Medium', NULL),
+(3, 'Margherita Pizza', 7.99, 'Food', 'Tomato, mozzarella, and basil', 'Single Portion', NULL),
+(3, 'Spaghetti Carbonara', 9.99, 'Food', 'Classic Italian pasta with creamy sauce and pancetta', 'Family Size', NULL),
+(4, 'Tuna Sashimi', 7.99, 'Food', 'Fresh tuna served raw', 'Family Size', NULL),
+(4, 'Salmon Nigiri', 6.99, 'Food', 'Fresh salmon on sushi rice', 'Single Portion', NULL),
+(5, 'Chicken Tikka Masala', 8.99, 'Food', 'Tender chicken in a rich, spiced curry', 'Single Portion', NULL),
+(5, 'Vegetable Biryani', 11.99, 'Food', 'Flavourful rice with mixed vegetables and spices', 'Family Size', NULL),
+(6, 'Boston Belly Buster', 4.50, 'Food', 'Sausage, bacon, egg, burger and potato scone all in one roll', 'Single Portion', NULL),
+(6, 'Tiktok Special', 5.00, 'Food', 'A sub roll filled with griddle fried chicken, seasonings, topped with BBQ pulled pork and crispy onions', 'Single Portion', NULL) [42000-232]

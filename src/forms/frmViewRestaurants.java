@@ -1,6 +1,7 @@
 package forms;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.List;
 import models.*;
 
@@ -71,8 +72,10 @@ public class frmViewRestaurants extends JFrame {
             lblName.setText(selectedRestaurant.getName());
             lblCuisine.setText(selectedRestaurant.getCuisine());
 
-            ImageIcon imageIcon = new ImageIcon("src/images/default.jpg");
-            lblImage.setIcon(imageIcon);
+            ImageIcon imageIcon = new ImageIcon(selectedRestaurant.getImageURL());
+            Image image = imageIcon.getImage();
+            Image scaledImage = image.getScaledInstance(300, 250, Image.SCALE_SMOOTH);
+            lblImage.setIcon(new ImageIcon(scaledImage));
         }
     }
 }
