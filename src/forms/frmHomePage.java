@@ -56,12 +56,12 @@ public class frmHomePage extends JFrame {
                 break;
 
             default:
-                lblPhoto.setIcon(new ImageIcon("src/images/500x300.png"));
+                lblPhoto.setIcon(new ImageIcon("src/images/default.jpg"));
                 btn1.setVisible(false);
                 btn2.setVisible(false);
         }
 
-        btnLogout.addActionListener(e -> {
+        btnLogout.addActionListener(_ -> {
             for (Window window : Window.getWindows()) {
                 if (window instanceof JFrame && window.isShowing()) {
                     window.dispose();

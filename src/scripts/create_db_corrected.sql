@@ -21,7 +21,7 @@ CREATE TABLE restaurants (
                              id INT AUTO_INCREMENT PRIMARY KEY,
                              name VARCHAR(100) NOT NULL,
                              cuisine VARCHAR(255) NOT NULL,
-                             image_url VARCHAR(255) DEFAULT 'images/default.jpg'
+                             image_url VARCHAR(255) DEFAULT 'src/images/default.jpg'
 );
 
 -- Create Menus Table (No Foreign Keys)
